@@ -147,7 +147,7 @@ main {
   justify-content: center;
 }
 
-.product__container {
+.product__container {  
   background: #ffffff;
   width: 1fr;
   height: 32em;
@@ -275,17 +275,29 @@ footer {
   }
 }
 @media screen and (min-width: 769px) {
+  header{
+    height: 100px;
+  }
   .theader{
     flex-wrap: unset;
-    height: 100px;
+    height: 50px;
     width: 80%;
   }
+  nav{
+    height: 50px;
+    padding: 10px;
+  }
   .theader #logo-container{
-    /* background-color: #1259c3; */
     width: 20em;
   }
   header .searchBar{
     height: 45px;
   }
 
+  .product__container:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(100, 100, 100, 1);
+    position: relative;
+    transform: scale(1,1.05);
+  }
 }
