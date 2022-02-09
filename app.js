@@ -3,9 +3,9 @@ const express = require('express');
 const app = express();
 
 app.use('/static', express.static(__dirname + '/public'));
-
-app.listen(process.env.PORT || 3000, () => {
-  console.log('Servidor funcionando');
+const puerto = process.env.PORT || 3000;
+app.listen(puerto, () => {
+  console.log(`Servidor funcionando en el puerto ${puerto}`);
 });
 
 app.get('/', (req, res) => {
